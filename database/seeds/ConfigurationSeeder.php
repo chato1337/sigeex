@@ -32,6 +32,9 @@ class ConfigurationSeeder extends Seeder
         ],
         'ocupaciones' => [
             'columns' => 'id, nombre_ocupacion, code, @created_at, @updated_at'
+        ],
+        'tipo_parentescos' => [
+            'columns' => 'id, descripcion, code, @created_at, @updated_at'
         ]
     ];
 

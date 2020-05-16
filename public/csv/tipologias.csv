@@ -1,10 +1,12 @@
-1	Hurto	11
-2	Homicidio	12
-3	Extorsion	13
-4	Concierto para delinquir	21
-5	Acceso carnal violento	22
-6	Intento de Homicidio	31
-7	Líder comunitario	41
-8	Docente	42
-9	Desempleado	50
-10	Estudiante	91
+1	Homicidio	01
+2	Tentativa de Homicidio	02
+3	Hurto	03
+4	Abuso de confianza	04
+5	Linderos	05
+6	Sucesiones	06
+7	Separaciones	07
+8	Inasistencia alimentaria	08
+9	Reconocimiento de paternidad	09
+10	Acceso carnal	10
+11	Abuso sexual	11
+12	Otro delito	12

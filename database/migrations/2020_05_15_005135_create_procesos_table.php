@@ -17,7 +17,8 @@ class CreateProcesosTable extends Migration
             $table->id();
             $table->unsignedBigInteger('persona_id');
             $table->integer('codigo');
-            $table->integer('estado');
+            $table->integer('estado')->default(1);
+            $table->string('tipo_falta');
             $table->unsignedBigInteger('tipologia_id');
             $table->string('desc_corta');
             $table->longText('descripcion');

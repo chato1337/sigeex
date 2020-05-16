@@ -16,6 +16,7 @@ class CreateTipoParentescosTable extends Migration
         Schema::create('tipo_parentescos', function (Blueprint $table) {
             $table->id();
             $table->string('descripcion');
+            $table->string('code');
 
             $table->timestamps();
         });
