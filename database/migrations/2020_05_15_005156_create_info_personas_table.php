@@ -18,6 +18,7 @@ class CreateInfoPersonasTable extends Migration
             $table->unsignedBigInteger('persona_id');
             $table->unsignedBigInteger('municipio_nac_id');
             $table->unsignedBigInteger('depto_nac_id');
+            $table->unsignedBigInteger('ocupacion_id');
             $table->time('fecha_exped_doc');
             $table->unsignedBigInteger('municipio_exped_id');
             $table->unsignedBigInteger('depto_exped_id');
@@ -27,6 +28,7 @@ class CreateInfoPersonasTable extends Migration
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
             $table->foreign('municipio_nac_id')->references('id')->on('municipalities')->onDelete('cascade');
             $table->foreign('depto_nac_id')->references('id')->on('departments')->onDelete('cascade');
+            $table->foreign('ocupacion_id')->references('id')->on('ocupaciones')->onDelete('cascade');
             $table->foreign('municipio_exped_id')->references('id')->on('municipalities')->onDelete('cascade');
             $table->foreign('depto_exped_id')->references('id')->on('departments')->onDelete('cascade');
         });
