@@ -20,16 +20,21 @@ class CreateProcesosTable extends Migration
             $table->integer('estado');
             $table->unsignedBigInteger('tipologia_id');
             $table->string('desc_corta');
-            $table->longText('nombre_archivo');
-            $table->unsignedInteger('p_autoridad_id');
-            $table->unsignedInteger('p_demandante_id');
-            $table->unsignedInteger('p_demandado_id');
-            $table->string('nombre_archivo');
-            $table->string('nombre_archivo');
-            $table->longText('p_autoridad_id');
+            $table->longText('descripcion');
+            $table->unsignedBigInteger('p_autoridad_id');
+            $table->unsignedBigInteger('p_demandante_id');
+            $table->unsignedBigInteger('p_demandado_id');
+            $table->longText('acuerdo');
             $table->longText('seguimiento');
 
             $table->timestamps();
+
+            $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
+            $table->foreign('tipologia_id')->references('id')->on('tipologias')->onDelete('cascade');
+            $table->foreign('p_autoridad_id')->references('id')->on('autoridades')->onDelete('cascade');
+            $table->foreign('p_demandante_id')->references('id')->on('personas')->onDelete('cascade');
+            $table->foreign('p_demandado_id')->references('id')->on('personas')->onDelete('cascade');
+
         });
     }
 

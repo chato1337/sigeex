@@ -19,10 +19,14 @@ class CreatePersonasTable extends Migration
             $table->string('nombres');
             $table->string('apellidos');
             $table->date('fecha_nacimiento');
-            $table->string('documento_id');
+            $table->unsignedBigInteger('documento_id');
             $table->integer('numero_documento');
 
             $table->timestamps();
+
+            
+            $table->foreign('documento_id')->references('id')->on('documentos')->onDelete('cascade');
+            
         });
     }
 

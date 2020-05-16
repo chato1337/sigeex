@@ -20,6 +20,10 @@ class CreateMunicipalitiesTable extends Migration
             $table->integer('code');
 
             $table->timestamps();
+
+            
+            $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
+            
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAnexosTable extends Migration
+class CreateOtrosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateAnexosTable extends Migration
      */
     public function up()
     {
-        Schema::create('anexos', function (Blueprint $table) {
+        Schema::create('otros', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('persona_id');
-            $table->unsignedBigInteger('proceso_id');
-            $table->string('nombre_archivo');
-            $table->string('ruta_archivo');
+            $table->string('otro');
+            $table->string('descripcion');
             $table->timestamps();
+            
+            $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
+            
         });
     }
 
@@ -30,6 +32,6 @@ class CreateAnexosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('anexos');
+        Schema::dropIfExists('otros');
     }
 }
