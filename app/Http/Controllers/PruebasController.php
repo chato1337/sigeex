@@ -8,6 +8,6 @@ class PruebasController extends Controller
 {
     public function index()
     {
-        return view('pruebas');
+        return view('pruebas', ['form' => app('App\Forms\FirstForm')]);
     }
 }
