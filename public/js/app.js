@@ -1932,6 +1932,149 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: {
+        nombres: '',
+        apellidos: '',
+        fecha_nacimiento: '',
+        food: null,
+        numero_documento: 0,
+        genero: null,
+        checked: []
+      },
+      foods: [{
+        text: 'Select One',
+        value: null
+      }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+      generos: [{
+        text: 'Selecciona uno',
+        value: null
+      }, 'Hombre', 'Mujer', 'Otro'],
+      show: true
+    };
+  },
+  methods: {
+    onSubmit: function onSubmit(evt) {
+      evt.preventDefault();
+      alert(JSON.stringify(this.form));
+    },
+    onReset: function onReset(evt) {
+      var _this = this;
+
+      evt.preventDefault(); // Reset our form values
+
+      this.form.nombres = '';
+      this.form.food = null;
+      this.form.checked = []; // Trick to reset/clear native browser form validation state
+
+      this.show = false;
+      this.$nextTick(function () {
+        _this.show = true;
+      });
+    }
+  },
+  computed: {
+    validation: function validation() {//  return this.userId.length > 4 && this.userId.length < 13
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PersonaComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PersonaComponent.vue?vue&type=script&lang=js& ***!
@@ -1960,30 +2103,325 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       items: [{
+        isActive: true,
         age: 40,
-        first_name: 'Dickerson',
-        last_name: 'Macdonald'
+        name: {
+          first: 'Dickerson',
+          last: 'Macdonald'
+        }
       }, {
+        isActive: false,
         age: 21,
-        first_name: 'Larsen',
-        last_name: 'Shaw'
+        name: {
+          first: 'Larsen',
+          last: 'Shaw'
+        }
       }, {
+        isActive: false,
+        age: 9,
+        name: {
+          first: 'Mini',
+          last: 'Navarro'
+        },
+        _rowVariant: 'success'
+      }, {
+        isActive: false,
         age: 89,
-        first_name: 'Geneva',
-        last_name: 'Wilson'
+        name: {
+          first: 'Geneva',
+          last: 'Wilson'
+        }
       }, {
+        isActive: true,
         age: 38,
-        first_name: 'Jami',
-        last_name: 'Carney'
-      }]
+        name: {
+          first: 'Jami',
+          last: 'Carney'
+        }
+      }, {
+        isActive: false,
+        age: 27,
+        name: {
+          first: 'Essie',
+          last: 'Dunlap'
+        }
+      }, {
+        isActive: true,
+        age: 40,
+        name: {
+          first: 'Thor',
+          last: 'Macdonald'
+        }
+      }, {
+        isActive: true,
+        age: 87,
+        name: {
+          first: 'Larsen',
+          last: 'Shaw'
+        },
+        _cellVariants: {
+          age: 'danger',
+          isActive: 'warning'
+        }
+      }, {
+        isActive: false,
+        age: 26,
+        name: {
+          first: 'Mitzi',
+          last: 'Navarro'
+        }
+      }, {
+        isActive: false,
+        age: 22,
+        name: {
+          first: 'Genevieve',
+          last: 'Wilson'
+        }
+      }, {
+        isActive: true,
+        age: 38,
+        name: {
+          first: 'John',
+          last: 'Carney'
+        }
+      }, {
+        isActive: false,
+        age: 29,
+        name: {
+          first: 'Dick',
+          last: 'Dunlap'
+        }
+      }],
+      fields: [{
+        key: 'name',
+        label: 'Person Full name',
+        sortable: true,
+        sortDirection: 'desc'
+      }, {
+        key: 'age',
+        label: 'Person age',
+        sortable: true,
+        "class": 'text-center'
+      }, {
+        key: 'isActive',
+        label: 'is Active',
+        formatter: function formatter(value, key, item) {
+          return value ? 'Yes' : 'No';
+        },
+        sortable: true,
+        sortByFormatted: true,
+        filterByFormatted: true
+      }, {
+        key: 'actions',
+        label: 'Actions'
+      }],
+      totalRows: 1,
+      currentPage: 1,
+      perPage: 5,
+      pageOptions: [5, 10, 15],
+      sortBy: '',
+      sortDesc: false,
+      sortDirection: 'asc',
+      filter: null,
+      filterOn: [],
+      infoModal: {
+        id: 'info-modal',
+        title: '',
+        content: ''
+      }
     };
   },
+  computed: {
+    sortOptions: function sortOptions() {
+      // Create an options list from our fields
+      return this.fields.filter(function (f) {
+        return f.sortable;
+      }).map(function (f) {
+        return {
+          text: f.label,
+          value: f.key
+        };
+      });
+    }
+  },
   mounted: function mounted() {
-    console.log('Component personas mounted.');
+    // Set the initial number of items
+    this.totalRows = this.items.length;
+  },
+  methods: {
+    info: function info(item, index, button) {
+      this.infoModal.title = "Row index: ".concat(index);
+      this.infoModal.content = JSON.stringify(item, null, 2);
+      this.$root.$emit('bv::show::modal', this.infoModal.id, button);
+    },
+    resetInfoModal: function resetInfoModal() {
+      this.infoModal.title = '';
+      this.infoModal.content = '';
+    },
+    onFiltered: function onFiltered(filteredItems) {
+      // Trigger pagination to update the number of buttons/pages due to filtering
+      this.totalRows = filteredItems.length;
+      this.currentPage = 1;
+    }
   }
 });
 
@@ -79439,6 +79877,284 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _vm._v("Nuevo expediente de comunero")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "div",
+              [
+                _vm.show
+                  ? _c(
+                      "b-form",
+                      { on: { submit: _vm.onSubmit, reset: _vm.onReset } },
+                      [
+                        _c(
+                          "b-form-group",
+                          {
+                            attrs: {
+                              id: "input-group-1",
+                              label: "Nombres:",
+                              "label-for": "input-1"
+                            }
+                          },
+                          [
+                            _c("b-form-input", {
+                              attrs: {
+                                id: "input-1",
+                                required: "",
+                                placeholder: "Ingresa los nombres del comunero"
+                              },
+                              model: {
+                                value: _vm.form.nombres,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "nombres", $$v)
+                                },
+                                expression: "form.nombres"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-form-group",
+                          {
+                            attrs: {
+                              id: "input-group-2",
+                              label: "apeliidos:",
+                              "label-for": "input-2"
+                            }
+                          },
+                          [
+                            _c("b-form-input", {
+                              attrs: {
+                                id: "input-2",
+                                required: "",
+                                placeholder:
+                                  "Ingresa los apeliidos del comunero"
+                              },
+                              model: {
+                                value: _vm.form.apellidos,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "apellidos", $$v)
+                                },
+                                expression: "form.apellidos"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          [
+                            _c(
+                              "label",
+                              { attrs: { for: "example-datepicker" } },
+                              [_vm._v("Fecha de nacimiento")]
+                            ),
+                            _vm._v(" "),
+                            _c("b-form-datepicker", {
+                              staticClass: "mb-2",
+                              attrs: { id: "example-datepicker" },
+                              model: {
+                                value: _vm.form.fecha_nacimiento,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "fecha_nacimiento", $$v)
+                                },
+                                expression: "form.fecha_nacimiento"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-form-group",
+                          {
+                            attrs: {
+                              id: "input-group-3",
+                              label: "Food:",
+                              "label-for": "input-3"
+                            }
+                          },
+                          [
+                            _c("b-form-select", {
+                              attrs: {
+                                id: "input-3",
+                                options: _vm.foods,
+                                required: ""
+                              },
+                              model: {
+                                value: _vm.form.food,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "food", $$v)
+                                },
+                                expression: "form.food"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-form-group",
+                          {
+                            attrs: {
+                              id: "input-group-2",
+                              label: "numero_documento:",
+                              "label-for": "input-2"
+                            }
+                          },
+                          [
+                            _c("b-form-input", {
+                              attrs: {
+                                id: "input-2",
+                                type: "number",
+                                required: "",
+                                placeholder:
+                                  "Numero de documento de identificación"
+                              },
+                              model: {
+                                value: _vm.form.numero_documento,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "numero_documento", $$v)
+                                },
+                                expression: "form.numero_documento"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-form-group",
+                          {
+                            attrs: {
+                              id: "input-group-3",
+                              label: "Genero:",
+                              "label-for": "input-3"
+                            }
+                          },
+                          [
+                            _c("b-form-select", {
+                              attrs: {
+                                id: "input-3",
+                                options: _vm.generos,
+                                required: ""
+                              },
+                              model: {
+                                value: _vm.form.genero,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "genero", $$v)
+                                },
+                                expression: "form.genero"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-form-group",
+                          { attrs: { id: "input-group-4" } },
+                          [
+                            _c(
+                              "b-form-checkbox-group",
+                              {
+                                attrs: { id: "checkboxes-4" },
+                                model: {
+                                  value: _vm.form.checked,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.form, "checked", $$v)
+                                  },
+                                  expression: "form.checked"
+                                }
+                              },
+                              [
+                                _c(
+                                  "b-form-checkbox",
+                                  { attrs: { value: "me" } },
+                                  [_vm._v("Check me out")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-form-checkbox",
+                                  { attrs: { value: "that" } },
+                                  [_vm._v("Check that out")]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-button",
+                          { attrs: { type: "submit", variant: "primary" } },
+                          [_vm._v("Submit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-button",
+                          { attrs: { type: "reset", variant: "danger" } },
+                          [_vm._v("Reset")]
+                        )
+                      ],
+                      1
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "b-card",
+                  {
+                    staticClass: "mt-3",
+                    attrs: { header: "Form Data Result" }
+                  },
+                  [
+                    _c("pre", { staticClass: "m-0" }, [
+                      _vm._v(_vm._s(_vm.form))
+                    ])
+                  ]
+                )
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PersonaComponent.vue?vue&type=template&id=1646209c&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PersonaComponent.vue?vue&type=template&id=1646209c& ***!
@@ -79460,19 +80176,466 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }, [_vm._v("Comuneros")]),
           _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("h1", [_vm._v("Listado de comuneros")]),
-            _vm._v(" "),
-            _c(
-              "div",
-              [
-                _c("b-table", {
-                  attrs: { striped: "", hover: "", items: _vm.items }
-                })
-              ],
-              1
-            )
-          ])
+          _c(
+            "div",
+            { staticClass: "card-body" },
+            [
+              _c("h1", [_vm._v("Listado de comuneros")]),
+              _vm._v(" "),
+              _c(
+                "b-container",
+                { attrs: { fluid: "" } },
+                [
+                  _c(
+                    "b-row",
+                    [
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { lg: "6" } },
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              staticClass: "mb-0",
+                              attrs: {
+                                label: "Sort",
+                                "label-cols-sm": "3",
+                                "label-align-sm": "right",
+                                "label-size": "sm",
+                                "label-for": "sortBySelect"
+                              }
+                            },
+                            [
+                              _c(
+                                "b-input-group",
+                                { attrs: { size: "sm" } },
+                                [
+                                  _c("b-form-select", {
+                                    staticClass: "w-75",
+                                    attrs: {
+                                      id: "sortBySelect",
+                                      options: _vm.sortOptions
+                                    },
+                                    scopedSlots: _vm._u([
+                                      {
+                                        key: "first",
+                                        fn: function() {
+                                          return [
+                                            _c(
+                                              "option",
+                                              { attrs: { value: "" } },
+                                              [_vm._v("-- none --")]
+                                            )
+                                          ]
+                                        },
+                                        proxy: true
+                                      }
+                                    ]),
+                                    model: {
+                                      value: _vm.sortBy,
+                                      callback: function($$v) {
+                                        _vm.sortBy = $$v
+                                      },
+                                      expression: "sortBy"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-select",
+                                    {
+                                      staticClass: "w-25",
+                                      attrs: {
+                                        size: "sm",
+                                        disabled: !_vm.sortBy
+                                      },
+                                      model: {
+                                        value: _vm.sortDesc,
+                                        callback: function($$v) {
+                                          _vm.sortDesc = $$v
+                                        },
+                                        expression: "sortDesc"
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "option",
+                                        { domProps: { value: false } },
+                                        [_vm._v("Asc")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { domProps: { value: true } },
+                                        [_vm._v("Desc")]
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { lg: "6" } },
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              staticClass: "mb-0",
+                              attrs: {
+                                label: "Initial sort",
+                                "label-cols-sm": "3",
+                                "label-align-sm": "right",
+                                "label-size": "sm",
+                                "label-for": "initialSortSelect"
+                              }
+                            },
+                            [
+                              _c("b-form-select", {
+                                attrs: {
+                                  id: "initialSortSelect",
+                                  size: "sm",
+                                  options: ["asc", "desc", "last"]
+                                },
+                                model: {
+                                  value: _vm.sortDirection,
+                                  callback: function($$v) {
+                                    _vm.sortDirection = $$v
+                                  },
+                                  expression: "sortDirection"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { lg: "6" } },
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              staticClass: "mb-0",
+                              attrs: {
+                                label: "Filter",
+                                "label-cols-sm": "3",
+                                "label-align-sm": "right",
+                                "label-size": "sm",
+                                "label-for": "filterInput"
+                              }
+                            },
+                            [
+                              _c(
+                                "b-input-group",
+                                { attrs: { size: "sm" } },
+                                [
+                                  _c("b-form-input", {
+                                    attrs: {
+                                      type: "search",
+                                      id: "filterInput",
+                                      placeholder: "Type to Search"
+                                    },
+                                    model: {
+                                      value: _vm.filter,
+                                      callback: function($$v) {
+                                        _vm.filter = $$v
+                                      },
+                                      expression: "filter"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-input-group-append",
+                                    [
+                                      _c(
+                                        "b-button",
+                                        {
+                                          attrs: { disabled: !_vm.filter },
+                                          on: {
+                                            click: function($event) {
+                                              _vm.filter = ""
+                                            }
+                                          }
+                                        },
+                                        [_vm._v("Clear")]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { lg: "6" } },
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              staticClass: "mb-0",
+                              attrs: {
+                                label: "Filter On",
+                                "label-cols-sm": "3",
+                                "label-align-sm": "right",
+                                "label-size": "sm",
+                                description:
+                                  "Leave all unchecked to filter on all data"
+                              }
+                            },
+                            [
+                              _c(
+                                "b-form-checkbox-group",
+                                {
+                                  staticClass: "mt-1",
+                                  model: {
+                                    value: _vm.filterOn,
+                                    callback: function($$v) {
+                                      _vm.filterOn = $$v
+                                    },
+                                    expression: "filterOn"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "name" } },
+                                    [_vm._v("Name")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "age" } },
+                                    [_vm._v("Age")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "b-form-checkbox",
+                                    { attrs: { value: "isActive" } },
+                                    [_vm._v("Active")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { sm: "5", md: "6" } },
+                        [
+                          _c(
+                            "b-form-group",
+                            {
+                              staticClass: "mb-0",
+                              attrs: {
+                                label: "Per page",
+                                "label-cols-sm": "6",
+                                "label-cols-md": "4",
+                                "label-cols-lg": "3",
+                                "label-align-sm": "right",
+                                "label-size": "sm",
+                                "label-for": "perPageSelect"
+                              }
+                            },
+                            [
+                              _c("b-form-select", {
+                                attrs: {
+                                  id: "perPageSelect",
+                                  size: "sm",
+                                  options: _vm.pageOptions
+                                },
+                                model: {
+                                  value: _vm.perPage,
+                                  callback: function($$v) {
+                                    _vm.perPage = $$v
+                                  },
+                                  expression: "perPage"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-col",
+                        { staticClass: "my-1", attrs: { sm: "7", md: "6" } },
+                        [
+                          _c("b-pagination", {
+                            staticClass: "my-0",
+                            attrs: {
+                              "total-rows": _vm.totalRows,
+                              "per-page": _vm.perPage,
+                              align: "fill",
+                              size: "sm"
+                            },
+                            model: {
+                              value: _vm.currentPage,
+                              callback: function($$v) {
+                                _vm.currentPage = $$v
+                              },
+                              expression: "currentPage"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-table", {
+                    attrs: {
+                      "show-empty": "",
+                      small: "",
+                      stacked: "md",
+                      items: _vm.items,
+                      fields: _vm.fields,
+                      "current-page": _vm.currentPage,
+                      "per-page": _vm.perPage,
+                      filter: _vm.filter,
+                      filterIncludedFields: _vm.filterOn,
+                      "sort-by": _vm.sortBy,
+                      "sort-desc": _vm.sortDesc,
+                      "sort-direction": _vm.sortDirection
+                    },
+                    on: {
+                      "update:sortBy": function($event) {
+                        _vm.sortBy = $event
+                      },
+                      "update:sort-by": function($event) {
+                        _vm.sortBy = $event
+                      },
+                      "update:sortDesc": function($event) {
+                        _vm.sortDesc = $event
+                      },
+                      "update:sort-desc": function($event) {
+                        _vm.sortDesc = $event
+                      },
+                      filtered: _vm.onFiltered
+                    },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "cell(name)",
+                        fn: function(row) {
+                          return [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(row.value.first) +
+                                " " +
+                                _vm._s(row.value.last) +
+                                "\n                        "
+                            )
+                          ]
+                        }
+                      },
+                      {
+                        key: "cell(actions)",
+                        fn: function(row) {
+                          return [
+                            _c(
+                              "b-button",
+                              {
+                                staticClass: "mr-1",
+                                attrs: { size: "sm" },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.info(
+                                      row.item,
+                                      row.index,
+                                      $event.target
+                                    )
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            Info modal\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-button",
+                              {
+                                attrs: { size: "sm" },
+                                on: { click: row.toggleDetails }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            " +
+                                    _vm._s(
+                                      row.detailsShowing ? "Hide" : "Show"
+                                    ) +
+                                    " Details\n                            "
+                                )
+                              ]
+                            )
+                          ]
+                        }
+                      },
+                      {
+                        key: "row-details",
+                        fn: function(row) {
+                          return [
+                            _c("b-card", [
+                              _c(
+                                "ul",
+                                _vm._l(row.item, function(value, key) {
+                                  return _c("li", { key: key }, [
+                                    _vm._v(_vm._s(key) + ": " + _vm._s(value))
+                                  ])
+                                }),
+                                0
+                              )
+                            ])
+                          ]
+                        }
+                      }
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "b-modal",
+                    {
+                      attrs: {
+                        id: _vm.infoModal.id,
+                        title: _vm.infoModal.title,
+                        "ok-only": ""
+                      },
+                      on: { hide: _vm.resetInfoModal }
+                    },
+                    [_c("pre", [_vm._v(_vm._s(_vm.infoModal.content))])]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
         ])
       ])
     ])
@@ -91677,10 +92840,11 @@ Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["default"]); // Telling Vue t
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 // const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default)) x
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 Vue.component('persona', __webpack_require__(/*! ./components/PersonaComponent.vue */ "./resources/js/components/PersonaComponent.vue")["default"]);
+Vue.component('ingresar-persona', __webpack_require__(/*! ./components/IngresarPersonaComponent.vue */ "./resources/js/components/IngresarPersonaComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -91805,6 +92969,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/IngresarPersonaComponent.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/IngresarPersonaComponent.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IngresarPersonaComponent.vue?vue&type=template&id=5656066b& */ "./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b&");
+/* harmony import */ var _IngresarPersonaComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IngresarPersonaComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _IngresarPersonaComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/IngresarPersonaComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IngresarPersonaComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./IngresarPersonaComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/IngresarPersonaComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IngresarPersonaComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./IngresarPersonaComponent.vue?vue&type=template&id=5656066b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/IngresarPersonaComponent.vue?vue&type=template&id=5656066b&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_IngresarPersonaComponent_vue_vue_type_template_id_5656066b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -10,7 +10,7 @@
     </template>
 
     <template v-if="menu==2">
-      <h1 class="text-center">menu2</h1>
+      <ingresar-persona></ingresar-persona>
     </template>
 
     <template v-if="menu==3">

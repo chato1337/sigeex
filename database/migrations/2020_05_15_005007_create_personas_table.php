@@ -21,6 +21,7 @@ class CreatePersonasTable extends Migration
             $table->date('fecha_nacimiento');
             $table->unsignedBigInteger('documento_id');
             $table->integer('numero_documento');
+            $table->string('sexo');
 
             $table->timestamps();
 
