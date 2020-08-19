@@ -14,7 +14,9 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        return view('pruebas');
+        $personas = Persona::all();
+
+        return ['personas' => $personas];
     }
 
     /**
@@ -35,7 +37,24 @@ class PersonaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $validacion = request()->validate([
+            'nombres' => 'required',
+            'apellidos' => 'required',
+            'fecha_nacimiento' => 'required',
+            'documento_id' => 'required',
+            'numero_documento' => 'required|unique:personas',
+        ]);
+
+        $persona = new Persona();
+        $persona->nombres = $request->nombres;
+        $persona->apellidos = $request->apellidos;
+        $persona->fecha_nacimiento = $request->fecha_nacimiento;
+        $persona->documento_id = $request->documento_id;
+        $persona->numero_documento = $request->numero_documento;
+        $persona->save();
+
+        return 'se igreso correctamente a al comunero';
     }
 
     /**
@@ -46,7 +65,9 @@ class PersonaController extends Controller
      */
     public function show(Persona $persona)
     {
-        //
+        $comunero = Persona::where('id', $persona->id)->first();
+
+        return ['comunero' => $comunero];
     }
 
     /**

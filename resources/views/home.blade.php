@@ -2,7 +2,7 @@
 
 @section('content')
     <template v-if="menu==0">
-        <menu-principal></menu-principal>
+        <mostrar-persona></mostrar-persona>
     </template>
 
     <template v-if="menu==1">
@@ -10,7 +10,7 @@
     </template>
 
     <template v-if="menu==2">
-      <h1 class="text-center">menu2</h1>
+      <crear-persona></crear-persona>
     </template>
 
     <template v-if="menu==3">
@@ -49,7 +49,7 @@
                     <a href="#"><img src="{{ asset('img/icon-1.png') }}"/></a>
                 </li>
                 <li @click="menu=2">
-                    <span>Contabilidad</span>
+                    <span>Crear nuevo comunero</span>
                     <a href="#"><img src="{{ asset('img/icon-2.png') }}"/></a>
                 </li>
                 <li @click="menu=3">

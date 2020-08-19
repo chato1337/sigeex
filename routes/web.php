@@ -13,3 +13,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pruebas', 'PruebasController@index')->name('home');
 
 Route::resource('personas', 'PersonaController');
+
+Route::resource('documentos', 'DocumentoController');

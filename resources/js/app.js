@@ -29,9 +29,11 @@ Vue.use(Laraform);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('persona', require('./components/PersonaComponent.vue').default);
+Vue.component("mostrar-persona", require("./components/MostrarPersonaComponent.vue").default);
+Vue.component("crear-persona", require("./components/crear/CrearPersonaComponent.vue").default);
 
 /**
- * Next, we will create a fresh Vue application instance and attach it to
+ * xNext, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
