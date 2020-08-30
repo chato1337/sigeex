@@ -4,15 +4,15 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue');
+window.Vue = require("vue");
 
-import BootstrapVue from 'bootstrap-vue' //Importing
+import BootstrapVue from "bootstrap-vue"; //Importing
 
-Vue.use(BootstrapVue) // Telling Vue to use this in whole application
+Vue.use(BootstrapVue); // Telling Vue to use this in whole application
 
-import Laraform from 'laraform'
+import Laraform from "laraform";
 
 Vue.use(Laraform);
 
@@ -27,10 +27,22 @@ Vue.use(Laraform);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('persona', require('./components/PersonaComponent.vue').default);
-Vue.component("mostrar-persona", require("./components/MostrarPersonaComponent.vue").default);
-Vue.component("crear-persona", require("./components/crear/CrearPersonaComponent.vue").default);
+Vue.component(
+    "example-component",
+    require("./components/ExampleComponent.vue").default
+);
+Vue.component(
+    "persona-component",
+    require("./components/PersonaComponent.vue").default
+);
+Vue.component(
+    "mostrar-persona",
+    require("./components/MostrarPersonaComponent.vue").default
+);
+Vue.component(
+    "crear-persona",
+    require("./components/crear/CrearPersonaComponent.vue").default
+);
 
 /**
  * xNext, we will create a fresh Vue application instance and attach it to
@@ -39,7 +51,7 @@ Vue.component("crear-persona", require("./components/crear/CrearPersonaComponent
  */
 
 const app = new Vue({
-    el: '#app',
+    el: "#app",
     data: {
         menu: 0
     }

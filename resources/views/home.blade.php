@@ -2,11 +2,11 @@
 
 @section('content')
     <template v-if="menu==0">
-        <mostrar-persona></mostrar-persona>
+        {{-- <mostrar-persona></mostrar-persona> --}}
     </template>
 
     <template v-if="menu==1">
-        <persona></persona>
+        <persona-component></persona-component>
     </template>
 
     <template v-if="menu==2">
@@ -38,7 +38,7 @@
     </template>
 
     <template v-if="menu==20">
-      <entidad></entidad>
+      <h2>otro menu</h2>
     </template>
 
     <div id="dock-container">

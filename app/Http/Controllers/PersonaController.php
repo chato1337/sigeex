@@ -14,8 +14,8 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        $personas = Persona::all();
-
+        $personas = Persona::with('documento')->with('correo')->where('estado', 1)->get();
+        
         return ['personas' => $personas];
     }
 
@@ -65,9 +65,10 @@ class PersonaController extends Controller
      */
     public function show(Persona $persona)
     {
-        $comunero = Persona::where('id', $persona->id)->first();
+        $personas = Persona::with('documento')->with('correo')->where('estado', 1)->where('id', $persona->id)->first();
 
-        return ['comunero' => $comunero];
+
+        return ['personas' => $personas];
     }
 
     /**
@@ -101,6 +102,10 @@ class PersonaController extends Controller
      */
     public function destroy(Persona $persona)
     {
-        //
+        $desactivar_comunero = Persona::findOrFail($persona->id);
+        $desactivar_comunero->estado = 0;
+        $desactivar_comunero->save();
+
+        return 'se desactivo correctamente';
     }
 }
