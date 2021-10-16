@@ -19,8 +19,15 @@ class CreateDocumentosTable extends Migration
             $table->string('code');
             $table->timestamps();
         });
-    }
 
+        DB::table('documentos')->insert(
+            array(
+                'name' => 'cedula de ciudadania',
+                'code' => '2510'
+            )
+        );
+
+    }
     /**
      * Reverse the migrations.
      *

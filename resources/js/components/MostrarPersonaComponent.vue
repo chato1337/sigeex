@@ -27,23 +27,11 @@
                       <tbody>
                         <tr>
                           <td
-                            v-text="
-                                                            persona.nombres +
-                                                                ' ' +
-                                                                persona.apellidos
-                                                        "
+                            v-text="persona.nombres + ' ' + persona.apellidos"
                           ></td>
-                          <td
-                            v-text="
-                                                            persona.fecha_nacimiento
-                                                        "
-                          ></td>
+                          <td v-text="persona.fecha_nacimiento"></td>
                           <td v-text="persona.documento.name"></td>
-                          <td
-                            v-text="
-                                                            persona.numero_documento
-                                                        "
-                          ></td>
+                          <td v-text="persona.numero_documento"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -55,7 +43,10 @@
                     <span class="border-bottom">Correo electronico</span>
                     <ul>
                       <li v-for="correo in persona.correo" :key="correo.id">
-                        <a :href="'mailto:'+correo.descripcion" v-text="correo.descripcion"></a>
+                        <a
+                          :href="'mailto:' + correo.descripcion"
+                          v-text="correo.descripcion"
+                        ></a>
                       </li>
                     </ul>
                     <div v-if="correo_edit" class="add-mail">
@@ -66,7 +57,12 @@
                         title="presiona enter para guardar"
                         @keyup.enter="registrarCorreo()"
                       />
-                      <button class="btn btn-success btn-sm" @click="registrarCorreo()">+</button>
+                      <button
+                        class="btn btn-success btn-sm"
+                        @click="registrarCorreo()"
+                      >
+                        +
+                      </button>
                     </div>
                     <button
                       class="btn btn-success btn-sm"
@@ -112,9 +108,8 @@
                   </div>
                   <span>breve detalle:</span>
                   <p class="border-top">
-                    Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Hic, quaerat mollitia
-                    accusamus eum architecto est!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Hic, quaerat mollitia accusamus eum architecto est!
                   </p>
                   <span>Autoridad encargada:</span>
                   <p>
@@ -136,9 +131,8 @@
                   </div>
                   <span>breve detalle:</span>
                   <p class="border-top">
-                    Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Hic, quaerat mollitia
-                    accusamus eum architecto est!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Hic, quaerat mollitia accusamus eum architecto est!
                   </p>
                   <span>Autoridad encargada:</span>
                   <p>
