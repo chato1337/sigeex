@@ -16,7 +16,7 @@
         "jquery": "^3.2",
         "laravel-mix": "^6.0.31",
         "lodash": "^4.17.20",
-        "moment": "^2.27.0",
+        "moment": "^2.29.4",
         "popper.js": "^1.12",
         "resolve-url-loader": "^4.0.0",
         "sass": "^1.26.10",
